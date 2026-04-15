@@ -1,0 +1,50 @@
+body {
+    background-color: #7a7aba;
+}
+.box{
+    text-align: center;
+}
+h1 {
+    color: #04476d;
+    font-size: 35px;
+}
+input#putdata {
+    height: 35px;
+    width: 50%;
+    padding: 0px 0px 0px 20px;
+    font-size: 17px;
+    color: #183b4c;
+}
+::placeholder{
+    font-size: 20px;
+}
+.box {
+    text-align: center;
+    width: 45%;
+    background-color: white;
+    padding: 20px 10px;
+    margin: 80px auto;
+    border-radius: 15px;
+    height: 500px;
+    overflow: scroll;
+}
+.c-div{
+    align-items: center;
+}
+button {
+    font-size: 20px;
+    padding: 7px 15px;
+    margin-left: 20px;
+    background-color: #4d4f7a;
+    color: #c2b1b1;
+}
+.todo-item {
+    display: flex;
+    margin-left: 90px;
+    align-items: center;
+    margin: 10px 0 10px 90px;
+}
+.todo-list {
+    font-size: 25px;
+    color: #286c9b;
+}

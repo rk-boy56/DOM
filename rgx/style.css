@@ -1,0 +1,18 @@
+.f-div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+input {
+    height: 25px;
+    width: 65%;
+}
+form {
+    text-align: center;
+}
+.w-d {
+    width: 25%;
+}
+label {
+    font-size: 20px;
+}

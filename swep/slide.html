@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        .m-div {
+            display: flex;
+        }
+
+        .slide{
+            display:none;
+        }
+
+        .left {
+            position: absolute;
+            top: 50%;
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        .right {
+            position: absolute;
+            top: 50%;
+            color: white;
+            right: 0px;
+            font-size: 30px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="m-div">
+        <img src="/images/img1.jpg" alt="" class="slide">
+        <img src="/images/img2.jpg" alt="" class="slide">
+        <img src="/images/img3.jpg" alt="" class="slide">
+        <img src="/images/img4.jpg" alt="" class="slide">
+        <img src="/images/img5.jpg" alt="" class="slide">
+        <img src="/images/img6.png" alt="" class="slide">
+    </div>
+    <button class="btn btn-primary left" onclick="Left()"><i class="fa-solid fa-angle-left"></i></button>
+    <button class="btn btn-primary right" onclick="Right()"><i class="fa-solid fa-chevron-right"></i></button>
+
+
+
+    <script src="/swep/slide.js"></script>
+</body>
+
+</html>

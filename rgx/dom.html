@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/rgx/dom.css">
+</head>
+
+<body>
+
+    <div class="m-div">
+        <div id="bg-color" style="background-color: red; border: 2px solid red; color: white;" onclick="change('red')">
+            1st box</div>
+        <div id="bg-color" style="background-color: blue; border: 2px solid blue; color: white;"
+            onclick="change('blue')">3r box</div>
+        <div id="bg-color" style="background-color: black; border: 2px solid black; color: white;"
+            onclick="change('black')">4th box</div>
+        <div id="bg-color" style="background-color: green; border: 2px solid green; color: white;"
+            onclick="change('green')">5th box</div>
+        <div id="bg-color" style="background-color: yellow; border: 2px solid yellow; color: white;"
+            onclick="change('yellow')">6th box</div>
+        <div id="bg-color" style="background-color: greenyellow; border: 2px solid greenyellow; color: white;"
+            onclick="change('greenyellow')">7th box</div>
+        <div id="bg-color" style="background-color: rebeccapurple; border: 2px solid rebeccapurple; color: white;"
+            onclick="change('rebeccapurple')">8th box</div>
+        <div id="bg-color" style="background-color: beige; border: 2px solid beige; color: white;"
+            onclick="change('beige')">9th box</div>
+        <div id="bg-color" style="background-color: palevioletred; border: 2px solid palevioletred; color: white;"
+            onclick="change('palevioletred')">10st box</div>
+
+    </div>
+
+
+    <div class="t-div">
+        <h1 id="time"></h1>
+        <p>digital watch</p>
+    </div>
+
+
+    <div class="t-div">
+        <h1 id="stWatch"> 00 : 00 : 00</h1>
+        <button onclick="Start()">Start</button>
+        <button onclick="Stop()">Stop</button>
+        <button onclick="Reset()">Reset</button>
+        <p>stop watch</p>
+    </div>
+
+
+    <script src="/rgx/dom.js"></script>
+</body>
+
+</html>

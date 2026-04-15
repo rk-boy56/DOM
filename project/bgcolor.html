@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            gap: 20px;
+            margin-top: 200px;
+        }
+        .box div{
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="color">select color</label>
+    <input type="color" id="color">
+    <button id="btn" onclick="bg()">set bg-color</button>
+
+    <div class="box">
+        <div style="background-color: blue;" onclick="change('blue')"></div>
+        <div style="background-color: red;" onclick="change('red')"></div>
+        <div style="background-color: yellow;" onclick="change('yellow')"></div>
+        <div style="background-color: green;" onclick="change('green')"></div>
+        <div style="background-color: rebeccapurple;" onclick="change('rebeccapurple')"></div>
+    </div>
+    <script src="/project/bgcolor.js"></script>
+</body>
+</html>
