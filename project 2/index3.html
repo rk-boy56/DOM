@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input">type something :-</label>
+    <input type="text" id="input" placeholder="typing.....">
+    <p id="count">total input count :- </p>
+    <p id="key">key pressed :- </p>
+
+    <script>
+        let input = document.getElementById('input');
+        let para = document.getElementById('count');
+        let key = document.getElementById('key');
+        input.addEventListener("keydown", (e) => {
+            para.innerText = "total input count :- " + input.value.length;
+            key.innerText += e.key ;
+        })
+
+     
+    </script>
+</body>
+</html>

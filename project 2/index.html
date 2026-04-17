@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .m-div {
+            text-align: center;
+        }
+
+        #c-div {
+            width: 60%;
+            height: 400px;
+            border: 2px solid black;
+            margin: 70px auto;
+            border-radius: 10px;
+        }
+
+
+
+        button {
+            padding: 10px 20px;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m-div">
+        <h1 id="color">The random color is</h1>
+        <button id="btn">generate random color</button>
+        <div id="c-div"></div>
+    </div>
+
+
+    <script>
+        // first type
+
+        let hex = "#";
+        let value = "  0123456789ABCDEF";
+        let btn = document.getElementById('btn');
+
+
+        // for (let i = 0; i < 6; i++) {
+        //     hex += value[Math.floor(Math.random() * 16)];
+        // }
+        // btn.addEventListener("click", () => {
+        //     document.getElementById('color').innerText = hex;
+        //     document.getElementById('color').style.color = hex;
+
+        //     document.getElementById('c-div').style.backgroundColor = hex;
+        // })
+
+
+        // second type
+
+
+        function getColor() {
+            let red = Math.floor(Math.random() * 255);
+            let green = Math.floor(Math.random() * 255);
+            let blue = Math.floor(Math.random() * 255);
+            let color = `rgb(${red}, ${green}, ${blue})`;
+            return color
+        }
+
+        btn.addEventListener("click", () => {
+
+            document.getElementById('color').innerText = getColor();
+            document.getElementById('color').style.colort = getColor();
+            document.getElementById('c-div').style.backgroundColor = getColor();
+        })
+    </script>
+</body>
+
+</html>

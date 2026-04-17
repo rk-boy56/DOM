@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .m-div {
+            text-align: center;
+        }
+
+        #cont {
+            width: 30%;
+            height: 380px;
+            background-color: red;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        #head {
+            font-size: 50px;
+        }
+
+        h3#enter {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="m-div">
+        <h1 id="head">let's stat mouse events</h1>
+        <div id="cont">
+            <h3 id="enter">enter this element</h3>
+            <h1 id="info"></h1>
+        </div>
+    </div>
+
+    <script>
+        let h1 = document.getElementById('head');
+        let div = document.getElementById('cont');
+
+        cont.addEventListener("mouseover", () => {
+            h1.innerText = " mouse is over the box";
+        });
+
+        cont.addEventListener("mouseout", () => {
+            h1.innerText = "mouse has left the box";
+        });
+
+        cont.addEventListener("click", () => {
+            cont.style.backgroundColor = "green";
+        });
+        cont.addEventListener("dblclick", () => {
+            cont.style.backgroundColor = "black";
+        });
+
+        let h3 = document.getElementById('enter');
+        let info = document.getElementById('info');
+        h3.style.color = "white";
+        info.style.color = "white";
+
+        h3.addEventListener("mouseenter", () => {
+            info.innerText = "mouse has entered in element";
+        });
+
+        h3.addEventListener("mouseleave", () => {
+            info.innerText = "mouse has left the element";
+        });
+    </script>
+</body>
+
+</html>

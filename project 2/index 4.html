@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #m-div {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="m-div">
+
+    </div>
+
+    <script>
+        let cursor = document.getElementById('m-div');
+
+        document.addEventListener("click", function (e) {
+            cursor.style.left = e.pageX + "px";
+            cursor.style.top = e.pageY + "px";
+        });
+
+        let Y = 100;
+        let X = 100;
+        document.addEventListener("keydown", function (e){
+            if (e.key === "ArrowUp") {
+                Y -= 10;
+            }
+
+            if (e.key === "ArrowDown") {
+                Y += 10;
+            }
+
+            if (e.key === "ArrowLeft") {
+                X -= 10;
+            }
+
+            if (e.key === "ArrowRight") {
+                X += 10;
+            }
+
+            cursor.style.top = Y + "px";
+            cursor.style.left = X + "px";
+        });
+    </script>
+</body>
+
+</html>
